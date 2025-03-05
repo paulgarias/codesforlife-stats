@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 def calculate_mean(data):
     if not data:
         return 0
