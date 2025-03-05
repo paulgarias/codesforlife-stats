@@ -10,7 +10,8 @@ def calculate_variance(data):
     if not data:
         return 0
     mean = calculate_mean(data)
-    return sum((x - mean) ** 2 for x in data) / len(data)
+    return sum((x - mean) ** 2 for x in data) / (len(data)-1)
+    # Changed variance
 
 def calculate_standard_deviation(data):
     import math
