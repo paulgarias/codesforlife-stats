@@ -9,8 +9,9 @@ def calculate_mean(data):
 def calculate_variance(data):
     if not data:
         return 0
-    mean = calculate_mean(data)
-    return sum((x - mean) ** 2 for x in data) / len(data)
+    avg = calculate_mean(data)
+    return sum((x - avg) ** 2 for x in data) / len(data)
+    # Population variance
 
 def calculate_standard_deviation(data):
     import math
